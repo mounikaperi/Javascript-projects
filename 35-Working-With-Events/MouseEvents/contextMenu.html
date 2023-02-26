@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The ContextMenu Event</title>
+</head>
+<body>
+  <div class="main">
+    <div class="box" id="box1">
+      <p id="message"></p>
+    </div>
+    <button oncontextmenu="function1()" id="btn1">Click Me!!</button>
+  </div>
+  <script>
+    function function1() {
+      let message = document.getElementById("message");
+      message.innerHTML = "You have right-clicked a button";
+    }
+  </script>
+</body>
+</html>
